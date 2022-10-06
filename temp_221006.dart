@@ -134,6 +134,21 @@ Column(
                         ),
                        )
     ),
+    Container(child:
+          Icon(Icons.star,
+                      size: 30, 
+                      color: Colors.black,
+          ),
+
+    ),
+    Container(child:
+          Icon(Icons.star,
+        size: 30, 
+        color: Colors.black
+          ),
+
+    )
+
   ],
 ), 
   )
