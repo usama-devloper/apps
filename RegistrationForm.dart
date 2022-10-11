@@ -1,3 +1,4 @@
+
 import 'dart:html';
 
 import 'package:flutter/material.dart';
@@ -42,10 +43,68 @@ body:Column(
           fontWeight: FontWeight.bold),
         ),
       ),
-  ],
-    )
+     
+     
+     
+      Container(
+                   margin: EdgeInsets.all(20),
+                     child: TextFormField(
+                      decoration: InputDecoration(
+                      hintText: "Enter Email",
+                      prefixIcon: Icon(
+                      Icons.email,
+                      color: Colors.black,),
+                      hintStyle: TextStyle(color: Colors.black),
+                      labelText: "email",
+                      labelStyle: TextStyle(color: Colors.black),
+                      enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50)),
+                      focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50)),
+                      )
+                      )    
+          ),
+          
+          Container(
+                  margin: EdgeInsets.all(20),
+                  child: TextFormField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                    hintText: "Password",
+                    prefixIcon: Icon( 
+                    Icons.email,
+                    color: Colors.black,),
+                    hintStyle: TextStyle(color: Colors.black),
+                    labelText: "Password",
+                    labelStyle: TextStyle(color: Colors.black),
+                    enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(50)),
+                    focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(50)),
+                    )
+                    )
+          ),
+          
+          Container(
+                  
+                  margin: EdgeInsets.all(20),
+                  padding: EdgeInsets.all(10.2),
+
+                  child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                  padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 20.0),
+                  shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0)
+                  ),
+                 primary: Colors.green
+                 ),
+              child: Text(' LogIn ', style: TextStyle(fontSize: 28.0,color: Colors.white,fontWeight: FontWeight.bold),),  
+                ),
+          )
+    ], 
       ),
-      
+    ),
 );
 }
 }
