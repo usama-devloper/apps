@@ -1,6 +1,6 @@
 
-import 'dart:html';
 
+import 'dart:html';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
@@ -50,12 +50,12 @@ body:Column(
                    margin: EdgeInsets.all(20),
                      child: TextFormField(
                       decoration: InputDecoration(
-                      hintText: "Enter Email",
+                      hintText: "Enter Your Email",
                       prefixIcon: Icon(
                       Icons.email,
                       color: Colors.black,),
                       hintStyle: TextStyle(color: Colors.black),
-                      labelText: "email",
+                      labelText: "Email",
                       labelStyle: TextStyle(color: Colors.black),
                       enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(50)),
@@ -70,7 +70,7 @@ body:Column(
                   child: TextFormField(
                     obscureText: true,
                     decoration: InputDecoration(
-                    hintText: "Password",
+                    hintText: "Enter Your Password",
                     prefixIcon: Icon( 
                     Icons.email,
                     color: Colors.black,),
@@ -95,12 +95,14 @@ body:Column(
                   style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 20.0),
                   shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10.0)
+                  borderRadius: BorderRadius.circular(20.0)
                   ),
                  primary: Colors.green
                  ),
               child: Text(' LogIn ', style: TextStyle(fontSize: 28.0,color: Colors.white,fontWeight: FontWeight.bold),),  
                 ),
+              
+
           )
     ], 
       ),
