@@ -109,16 +109,27 @@ body:Column(
 
               ),
               Container(
-
+                    
                     margin: EdgeInsets.all(20),
                       padding: EdgeInsets.all(10.2),
                      
-                    child: GestureDetector(
-                        onTap: (){
-                          Navigator.push (context,
-                          MaterialPageRoute(builder: (context)=> homeScreen()));
-                        },
-                      )
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        GestureDetector(
+                            onTap: (){
+                              Navigator.push (context,
+                              MaterialPageRoute(builder: (context)=> homeScreen()));
+                            },
+                            child: Container(
+                              color: Colors.green,
+                              height: 40,
+                              width: 200,
+                              child: Center(child: Text("homepage")),
+                            ),
+                          ),
+                      ],
+                    )
                 
 
 
